@@ -1,0 +1,1 @@
+Arquivo simples de teste para funcionalidade de upload.
