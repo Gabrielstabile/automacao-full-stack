@@ -8,7 +8,7 @@ class Conta
     def saca(valor, max, taxa)
         if self.saldo < valor
             self.mensagem = "Saldo insuficiente para saque :("
-        elsif valor > 500.00
+        elsif valor > max
              self.mensagem = "Limite máximo por saque é de R$ " + max.to_s
         else
             self.saldo -= valor + taxa
