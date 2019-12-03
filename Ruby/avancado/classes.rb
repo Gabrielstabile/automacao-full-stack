@@ -10,12 +10,20 @@ class Conta
     self.saldo += valor
     puts "Depositando a quantia de: #{valor} reais na conta de: #{self.nome}"
   end
+
+  def retira(valor)
+    self.saldo -= valor
+    puts "Retirando a quantida de: #{valor} reais da conta de: #{self.nome}"
+  end
 end
 
-c = Conta.new("Gabriel")
+contaGabriel = Conta.new("Gabriel")
+contaThaissa = Conta.new("Thaíssa")
 
-c.deposita(100.00)
-puts c.saldo
+contaGabriel.deposita(100.00)
+contaGabriel.retira(70.00)
+puts contaGabriel.saldo
 
-c.deposita(10.00)
-puts c.saldo
+contaThaissa.deposita(100.00)
+contaThaissa.retira(50.00)
+puts contaThaissa.saldo
