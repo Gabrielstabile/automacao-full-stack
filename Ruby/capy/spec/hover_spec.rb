@@ -5,6 +5,7 @@ describe 'Mouse Hover', :hovers do
     end
 
     it 'quando passo o mouse sobre o blade'do
+        #Usamos o simbolo de "*" para indicar que queremos que contenha determinada palavra
         cardBlade = find('img[alt*=Blade]')
         cardBlade.hover
 
@@ -12,6 +13,7 @@ describe 'Mouse Hover', :hovers do
     end
 
     it 'quando passo o mouse sobre o pantera negra'do 
+        #Usamos o simbolo de "^" para indicar que queremos que comece com determinada palavra
         cardPanteraNegra = find('img[alt^=Pantera]')
         cardPanteraNegra.hover
 
@@ -20,6 +22,7 @@ describe 'Mouse Hover', :hovers do
 
 
     it 'quando passo o mouse sobre o Homem Aranha'do 
+        # Usamos o simbolo de "$" para indicar que queremos que termine com determinada palavra
         cardPanteraNegra = find('img[alt$=Aranha]')
         cardPanteraNegra.hover
 
